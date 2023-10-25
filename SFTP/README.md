@@ -33,6 +33,10 @@ s3fs test /home/opc/object_storage -o endpoint=ap-singapore-1 -o passwd_file=/ho
 ## Test your Filezilla
 Refer to this online reference: </br>
 https://www.bettertechtips.com/how-to/use-scp-filezilla/
+## Install inotify
+```
+sudo yum install -y inotify-tools-3.14-9.el7.x86_64
+```
 
 
 
