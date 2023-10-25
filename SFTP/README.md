@@ -37,6 +37,12 @@ https://www.bettertechtips.com/how-to/use-scp-filezilla/
 ```
 sudo yum install -y inotify-tools-3.14-9.el7.x86_64
 ```
+Prepare directory for new file
+```
+sudo su
+mkdir -p /shared/mysql_customer_orders/delivery_orders
+chmod -Rf ugo+xwr /shared/mysql_customer_orders/delivery_orders 
+```
 
 
 
