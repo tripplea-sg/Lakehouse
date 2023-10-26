@@ -33,17 +33,7 @@ s3fs test /home/opc/object_storage -o endpoint=ap-singapore-1 -o passwd_file=/ho
 ## Test your Filezilla
 Refer to this online reference: </br>
 https://www.bettertechtips.com/how-to/use-scp-filezilla/
-## Install Linux packages needed for automation
-```
-sudo yum install -y inotify-tools-3.14-9.el7.x86_64
-sudo yum install -y psmisc-22.20-17.el7.x86_64
-```
-Prepare directory for new file
-```
-sudo su
-mkdir -p /shared/mysql_customer_orders/delivery_orders
-chmod -Rf ugo+xwr /shared/mysql_customer_orders/delivery_orders 
-```
+
 
 
 
