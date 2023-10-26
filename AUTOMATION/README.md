@@ -139,11 +139,28 @@ create database lakehouse_metadata;
 ```
 Create table ddl master
 ```
-
+CREATE TABLE `ddl_master` (
+  `i` int NOT NULL AUTO_INCREMENT,
+  `database_name` varchar(30) DEFAULT NULL,
+  `table_name` varchar(20) DEFAULT NULL,
+  `text_format` varchar(10) DEFAULT NULL,
+  `field_delimiter` varchar(10) DEFAULT NULL,
+  `record_delimiter` varchar(10) DEFAULT NULL,
+  `region` varchar(20) DEFAULT NULL,
+  `namespace` varchar(50) DEFAULT NULL,
+  `bucket` varchar(10) DEFAULT NULL,
+  `text_prefix` varchar(10) DEFAULT NULL,
+  `dir_name` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`i`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
 Create table ddl_detail
 ```
-
+CREATE TABLE `ddl_detail` (
+  `i` int DEFAULT NULL,
+  `col_sq` int DEFAULT NULL,
+  `col_name` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
 Populate table accordingly.
 ## Run automation
